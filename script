@@ -1,4 +1,4 @@
-local Rayfield = loadstring(game:HttpGet('https://[Log in to view URL]'))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "💸 Sota Hub 💸",
@@ -6,9 +6,9 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "Sota Hub",
    LoadingSubtitle = "by Misagang & Slevvyz",
    ShowText = "Sota Hub", -- for mobile users to unhide rayfield, change if you'd like
-   Theme = "Default", -- Check https://[Log in to view URL]
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
-   ToggleUIKeybind = "left Control", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -21,7 +21,7 @@ local Window = Rayfield:CreateWindow({
 
    Discord = {
       Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
-      Invite = "https://[Log in to view URL]", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      Invite = "https://discord.gg/2EtDVykHt4", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
@@ -30,10 +30,10 @@ local Window = Rayfield:CreateWindow({
       Title = "Sota hub ・key",
       Subtitle = "Key System",
       Note = "Buy your key", -- Use this to tell the user how to get a key
-      FileName = "https://[Log in to view URL]", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      FileName = "https://pastebin.com/raw/2aerhg54", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"https://[Log in to view URL]"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      Key = {"https://pastebin.com/raw/2aerhg54"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })   
 
@@ -50,7 +50,6 @@ Rayfield:Notify({
 local Button = MainTab:CreateButton({
    Name = "Aimbot",
    Callback = function()
-    
+   -- The function that takes place when the button is pressed
    end,
 })
-
